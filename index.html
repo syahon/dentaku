@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>電卓</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <input id="result" type="text" value="0" readonly>
+
+  <div>
+    <button onclick="numClick(this.textContent)">7</button>
+    <button onclick="numClick(this.textContent)">8</button>
+    <button onclick="numClick(this.textContent)">9</button>
+    <button onclick="opeClick(this.textContent)">+</button>
+  </div>
+
+  <div>
+    <button onclick="numClick(this.textContent)">4</button>
+    <button onclick="numClick(this.textContent)">5</button>
+    <button onclick="numClick(this.textContent)">6</button>
+    <button onclick="opeClick(this.textContent)">-</button>
+  </div>
+
+  <div>
+    <button onclick="numClick(this.textContent)">1</button>
+    <button onclick="numClick(this.textContent)">2</button>
+    <button onclick="numClick(this.textContent)">3</button>
+    <button onclick="opeClick(this.textContent)">*</button>
+  </div>
+
+  <div>
+    <button onclick="numClick(this.textContent)">0</button>
+    <button onclick="numClick(this.textContent)">00</button>
+    <button onclick="dotClick(this.textContent)">.</button>
+    <button onclick="opeClick(this.textContent)">/</button>
+  </div>
+
+  <div class="bottom-btn">
+    <button onclick="acClick()">AC</button>
+    <button onclick="equalClick()">=</button>
+  </div>
+
+  <script src="calc.js"></script>
+</body>
+</html>
